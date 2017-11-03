@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+	<head>
+		<title> javascript functions </title>
+		
+		<script type = "text/javascript">
+		function bet()
+		{
+			
+			var bets = window.prompt('what number would you like to bet on ?');
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among all odds max bet 1000')
+			
+			Num = spin();
+			
+			
+				
+			if (bets == Num)
+			{
+					winnings = monay * 36;
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num);
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings);
+			}
+		}
+		
+		function odds()
+		{
+			var i = 0;
+			var bets = 1;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among all odds max bet 1000');
+			
+			Num = spin();
+			
+			for (i = 0; i < 18; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 2
+				}
+				bets += 2
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		
+		}
+		
+		function even()
+		{
+			var i = 0;
+			var bets = 2;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among all even numbers max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 18; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 2
+				}
+				bets += 2
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function black()
+		{
+			var i = 0;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			var blacks = [2,6,4,8,11,10,15,13,17,20,22,24,26,29,28,31,33,35];
+			
+			monay = window.prompt('how much monay would you like to split among blacks max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 18; i++)
+			{
+				
+				if (blacks[i] == Num)
+				{
+					winnings = monay * 2
+				}
+				
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function red()
+		{
+			var i = 0;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			var reds = [1,3,5,7,9,12,14,16,18,21,19,23,25,27,30,32,34,36];
+			
+			monay = window.prompt('how much monay would you like to split among reds max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 18; i++)
+			{
+				
+				if (reds[i] == Num)
+				{
+					winnings = monay * 2
+				}
+				
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		
+		function firstHalf()
+		{
+			var i = 0;
+			var bets = 1;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among the first 18 max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 18; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 2
+				}
+				bets += 1
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		
+		}
+		
+		function secondHalf()
+		{
+			var i = 0;
+			var bets = 19;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among the second 18 max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 18; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 2
+				}
+				bets += 1
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function firstTwelve()
+		{
+			var i = 0;
+			var bets = 1;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among the first 12 max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 12; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 3
+				}
+				bets += 1
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		
+		}
+		
+		function secondTwelve()
+		{
+			var i = 0;
+			var bets = 13;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among the second 12 max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 12; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 3
+				}
+				bets += 1
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function thirdTwelve()
+		{
+			var i = 0;
+			var bets = 25;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			
+			monay = window.prompt('how much monay would you like to split among the third 12 max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 12; i++)
+			{
+				
+				if (bets == Num)
+				{
+					winnings = monay * 3
+				}
+				bets += 1
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function firstRow()
+		{
+			var i = 0;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			var row = [3,4,6,12,15,18,21,24,27,30,33,36];
+			
+			monay = window.prompt('how much monay would you like to split among the first row max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 12; i++)
+			{
+				
+				if (row[i] == Num)
+				{
+					winnings = monay * 3
+				}
+				
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function secondRow()
+		{
+			var i = 0;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			var row = [2,5,11,14,17,20,23,26,29,32,35];
+			
+			monay = window.prompt('how much monay would you like to split among the second row max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 12; i++)
+			{
+				
+				if (row[i] == Num)
+				{
+					winnings = monay * 3
+				}
+				
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function thirdRow()
+		{
+			var i = 0;
+			var Num = 0;
+			var monay = 0;
+			var winnings = 0;
+			var row = [1,4,7,10,13,16,19,22,25,28,31,34];
+			
+			monay = window.prompt('how much monay would you like to split among the third row max bet 1000')
+			
+			Num = spin();
+			
+			for (i = 0; i < 12; i++)
+			{
+				
+				if (row[i] == Num)
+				{
+					winnings = monay * 3
+				}
+				
+			}
+			
+			if (winnings == 0)
+			{
+				alert('sorry you lost your monay the number was ' + Num)
+			}else{
+				alert('congragulations the number was ' + Num + '. you have won ' + winnings)
+			}
+		}
+		
+		function spin()
+		{
+			var Num = 0;
+			Num = Math.floor(Math.random()*36+1);
+			return Num
+		}
+		
+		</script>
+		
+	</head>
+	
+	<body>
+	<center>
+	<img src="roulette.jpg" height="500" >
+	
+	<p>
+		<button onclick="bet();">normal bet</button>
+	</p>
+	
+	<P>
+		<button onclick="odds();">Odds</button>
+		<button onclick="even();">Even</button>
+	</p>
+	
+	<p>
+		<button onclick="black();">Black</button>
+		<button onclick="red();">Red</button>
+	</p>
+	
+	<p>
+		<button onclick="firstHalf();">1 to 18</button>
+		<button onclick="secondHalf();">19 to 36</button>
+	</p>
+	
+	<p>
+		<button onclick="firstTwelve();">1 to 12</button>
+		<button onclick="secondTwelve();">13 to 24</button>
+		<button onclick="thirdTwelve();">25 to 36</button>
+	</p>
+	
+	<p>
+		<button onclick="firstRow();">top row</button>
+		<button onclick="secondRow();">middle row</button>
+		<button onclick="thirdRow();">bottum row</button>
+	</p>
+	</body></center>
+</html>
